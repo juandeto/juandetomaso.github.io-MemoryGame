@@ -6,13 +6,14 @@
 
 body{
     height: 100vh;
-    background-image: linear-gradient( #358edf,#0f3a85 );
+    background-image: linear-gradient( #42a4ff,#0f3a85 );
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .memory-game{ 
+    margin: 45px 0 0 0;
     width: 640px;
     height: 640px;
     display: flex;
@@ -86,4 +87,36 @@ body{
 .restart:active{
     transform: scale(.97);
     transition: transform .2s;
+}
+
+@media (max-width: 500px){
+    body {
+        flex-direction: column;
+    }
+    .memory-game {
+        margin: 35px 0 0 0;
+        width: 90%;
+        height: 640px;
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px;
+        perspective: 988px;
+        justify-content: space-around;
+        align-items: center;
+}
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(27.33% - 10px);
+}
+
+.clock-container {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-around;
+}
+.clock-container .restart {
+    margin: 3px;
+}
 }
