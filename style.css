@@ -91,7 +91,7 @@ body{
 
 @media (max-width: 500px){
     body {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .memory-game {
         margin: 35px 0 0 0;
