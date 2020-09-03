@@ -30,6 +30,7 @@ body{
     border: 2px ;
     transform: scale(1);
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
     transition: transform .5s;
 }
 
@@ -51,6 +52,7 @@ body{
     border-radius: 5px;
     background: #1c7ccc;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden
 }
 
 .front-face{
